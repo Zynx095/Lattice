@@ -1,0 +1,271 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  DESIGN TOKENS. HSL triplets so Tailwind can apply alpha (bg-card/80).
+
+  Two themes, set by data-theme on <html> (see applyAppearance in
+  src/config/theme.config.ts):
+    dark  = "Cinematic": near-black, solid surfaces, hairline borders.
+    light = "Aether": pearl, translucent glass surfaces, soft shadows.
+
+  --primary / --primary-foreground are written at runtime from the accent
+  preset, which has one value per theme.
+*/
+@layer base {
+  :root {
+    color-scheme: dark;
+
+    --background: 240 10% 4.5%;
+    --surface: 240 7% 8%;
+    --raised: 240 6% 11.5%;
+    --overlay: 240 6% 10%;
+    --border: 240 5% 15%;
+    --border-strong: 240 5% 22%;
+
+    --foreground: 48 10% 92%;
+    --muted-foreground: 240 4% 65%;
+    --subtle: 240 4% 47%;
+
+    --primary: 40 49% 71%;
+    --primary-foreground: 40 30% 8%;
+
+    --success: 152 42% 54%;
+    --warning: 39 77% 57%;
+    --danger: 4 72% 66%;
+    --info: 213 77% 64%;
+
+    /* Categorical chart colours, validated per theme. Use in order. */
+    --chart-1: #3987e5;
+    --chart-2: #d95926;
+    --chart-3: #199e70;
+    --chart-4: #c98500;
+    --chart-5: #d55181;
+
+    --scrim: rgb(0 0 0 / 0.65);
+    --shadow-pop: 0 0 0 1px hsl(240 5% 22% / 0.6), 0 16px 48px -12px rgb(0 0 0 / 0.7);
+  }
+
+  :root[data-theme='light'] {
+    color-scheme: light;
+
+    --background: 40 14% 92%;
+    --surface: 40 33% 98.5%;
+    --raised: 38 14% 90.5%;
+    --overlay: 40 33% 99%;
+    --border: 36 12% 84%;
+    --border-strong: 36 9% 72%;
+
+    --foreground: 225 10% 15%;
+    --muted-foreground: 225 6% 35%;
+    --subtle: 225 5% 43%;
+
+    --primary: 38 52% 36%;
+    --primary-foreground: 40 40% 98%;
+
+    --success: 152 52% 28%;
+    --warning: 30 82% 34%;
+    --danger: 4 62% 44%;
+    --info: 213 70% 40%;
+
+    --chart-1: #2a78d6;
+    --chart-2: #eb6834;
+    --chart-3: #1baf7a;
+    --chart-4: #eda100;
+    --chart-5: #e87ba4;
+
+    --scrim: hsl(225 18% 22% / 0.32);
+    --shadow-pop: 0 0 0 1px hsl(36 10% 70% / 0.55), 0 24px 56px -20px hsl(225 25% 25% / 0.35);
+  }
+
+  /* Higher contrast: stronger text and borders, opaque surfaces (see .panel). */
+  :root[data-contrast='high'] {
+    --muted-foreground: 240 5% 80%;
+    --subtle: 240 4% 66%;
+    --border: 240 5% 28%;
+    --border-strong: 240 5% 40%;
+  }
+  :root[data-theme='light'][data-contrast='high'] {
+    --foreground: 225 14% 8%;
+    --muted-foreground: 225 8% 22%;
+    --subtle: 225 6% 32%;
+    --border: 36 8% 62%;
+    --border-strong: 36 6% 48%;
+  }
+
+  * {
+    @apply border-border;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+  }
+  /* Compact density scales every rem-based size at once. */
+  html[data-density='compact'] {
+    font-size: 14.5px;
+  }
+
+  body {
+    @apply bg-background font-sans text-base text-foreground antialiased;
+    font-feature-settings: 'ss01', 'calt';
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4 {
+    font-weight: 560;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  :focus-visible {
+    outline: 2px solid hsl(var(--primary) / 0.85);
+    outline-offset: 2px;
+  }
+
+  ::selection {
+    background: hsl(var(--primary) / 0.28);
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--border-strong)) transparent;
+  }
+
+  /* While the theme changes, colours ease instead of snapping. Added and removed by applyAppearance. */
+  html.theme-switching,
+  html.theme-switching *,
+  html.theme-switching *::before,
+  html.theme-switching *::after {
+    transition: background-color 420ms ease, border-color 420ms ease, color 320ms ease, fill 320ms ease, stroke 320ms ease, box-shadow 420ms ease !important;
+  }
+}
+
+@layer components {
+  /* Cinematic surface: near-opaque, hairline border, a faint top edge. */
+  .panel {
+    @apply rounded-lg border border-border bg-card/[0.97];
+    box-shadow: inset 0 1px 0 hsl(0 0% 100% / 0.025);
+  }
+
+  /* Aether surface: frosted glass over the scene, lit from above. */
+  :root[data-theme='light'] .panel {
+    background: hsl(var(--surface) / 0.74);
+    border-color: hsl(0 0% 100% / 0.75);
+    -webkit-backdrop-filter: blur(18px) saturate(1.25);
+    backdrop-filter: blur(18px) saturate(1.25);
+    box-shadow:
+      inset 0 1px 0 hsl(0 0% 100% / 0.9),
+      0 0 0 1px hsl(36 12% 78% / 0.55),
+      0 18px 40px -24px hsl(225 25% 30% / 0.32);
+  }
+
+  :root[data-contrast='high'] .panel,
+  :root[data-theme='light'][data-contrast='high'] .panel {
+    background: hsl(var(--surface));
+    border-color: hsl(var(--border-strong));
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    box-shadow: none;
+  }
+
+  /* Sidebar and top bar: frame chrome that lets the scene glow through a little. */
+  .chrome {
+    background: hsl(var(--background) / 0.8);
+  }
+  :root[data-theme='light'] .chrome {
+    background: hsl(var(--surface) / 0.62);
+    -webkit-backdrop-filter: blur(20px) saturate(1.2);
+    backdrop-filter: blur(20px) saturate(1.2);
+  }
+  :root[data-contrast='high'] .chrome {
+    background: hsl(var(--background));
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+
+  .scrim {
+    background: var(--scrim);
+  }
+  :root[data-theme='light'] .scrim {
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+  }
+
+  .label {
+    @apply text-sm font-medium text-muted-foreground;
+  }
+
+  .num {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .control {
+    @apply h-9 w-full rounded-md border border-input bg-background/60 px-3 text-base text-foreground
+      placeholder:text-subtle transition-colors
+      hover:border-subtle
+      focus-visible:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/25
+      disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  :root[data-theme='light'] .control {
+    background: hsl(var(--surface) / 0.85);
+  }
+
+  /* Range input (Slider). The filled part is drawn with --fill, set inline. */
+  .range {
+    @apply h-5 w-full cursor-pointer appearance-none bg-transparent disabled:cursor-not-allowed disabled:opacity-45;
+  }
+  .range::-webkit-slider-runnable-track {
+    height: 4px;
+    border-radius: 999px;
+    background: linear-gradient(to right, hsl(var(--primary)) var(--fill, 0%), hsl(var(--border-strong)) var(--fill, 0%));
+  }
+  .range::-moz-range-track {
+    height: 4px;
+    border-radius: 999px;
+    background: hsl(var(--border-strong));
+  }
+  .range::-moz-range-progress {
+    height: 4px;
+    border-radius: 999px;
+    background: hsl(var(--primary));
+  }
+  .range::-webkit-slider-thumb {
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    margin-top: -5px;
+    border-radius: 999px;
+    background: hsl(var(--foreground));
+    border: 2px solid hsl(var(--surface));
+    box-shadow: 0 0 0 1px hsl(var(--border-strong));
+  }
+  .range::-moz-range-thumb {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background: hsl(var(--foreground));
+    border: 2px solid hsl(var(--surface));
+    box-shadow: 0 0 0 1px hsl(var(--border-strong));
+  }
+}
+
+/* Reduced motion: from the operating system, or forced in Settings (data-motion). */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+html[data-motion='reduce'] *,
+html[data-motion='reduce'] *::before,
+html[data-motion='reduce'] *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}

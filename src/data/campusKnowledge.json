@@ -1,0 +1,302 @@
+{
+  "university": {
+    "name": "Presidency University",
+    "shortName": "Presidency University",
+    "location": "Itgalpura, Rajanukunte, Yelahanka, Bengaluru 560119, Karnataka"
+  },
+  "lastVerified": "2026-11-11",
+  "disclaimer": "Compiled from Presidency University's published pages. Details can change, so confirm on official channels.",
+  "categories": [
+    {
+      "id": "academics",
+      "name": "Academics",
+      "description": "Schools, departments and advisors",
+      "channel": "Faculty advisor and your school office",
+      "facts": [
+        {
+          "text": "Students can contact their faculty advisor for academic-related assistance.",
+          "sourceLabel": "Presidency University",
+          "sourceUrl": "https://presidencyuniversity.in/"
+        },
+        {
+          "text": "The university has 11 schools: Computer Science and Engineering, Engineering, Information Science, Management, Commerce, Law, Design, Media Studies, Liberal Arts and Sciences, Allied and Healthcare Professions, and Artificial Intelligence and Advanced Computing. They offer 50+ UG, PG, PhD and diploma programs.",
+          "sourceLabel": "Academics",
+          "sourceUrl": "https://presidencyuniversity.in/academics"
+        },
+        {
+          "text": "Undergraduate programs follow the Choice Based Credit System (CBCS), in place since the 2021-22 academic year. Every student also completes twenty life-skills activities during their stay.",
+          "sourceLabel": "Academics",
+          "sourceUrl": "https://presidencyuniversity.in/academics"
+        },
+        {
+          "text": "The Academic Calendar for 2026-27, including school-wise calendars, is published as PDFs on the university's Academic Calendar page.",
+          "sourceLabel": "Academic Calendar",
+          "sourceUrl": "https://presidencyuniversity.in/academics/academic-calendar"
+        }
+      ],
+      "suggestions": [
+        "Which schools does Presidency University have?",
+        "Whom should I contact for academic problems?"
+      ]
+    },
+    {
+      "id": "attendance",
+      "name": "Attendance",
+      "description": "Attendance rules",
+      "channel": "University regulations and student handbook",
+      "facts": [
+        {
+          "text": "Students must follow the minimum attendance requirement prescribed by university regulations; the rules are in the Student Handbook. The exact percentage was not captured in this knowledge base.",
+          "sourceLabel": "Student Handbook 2023",
+          "sourceUrl": "https://presidencyuniversity.in/assets/academics-pdfs/2023/07/STUDENT-HANDBOOK-2023-1.pdf"
+        },
+        {
+          "text": "Hostel residents cannot stay in the hostel during class hours (8:30 AM to 4:30 PM) unless medically excused.",
+          "sourceLabel": "Hostel Policy",
+          "sourceUrl": "https://presidencyuniversity.in/assets/academics-pdfs/2023/07/Policy-on-Hostel-Management-and-Rules-of-Operation-V1.pdf"
+        }
+      ],
+      "suggestions": [
+        "What attendance requirement should I follow?",
+        "Can I stay in the hostel during class hours?"
+      ]
+    },
+    {
+      "id": "examinations",
+      "name": "Examinations",
+      "description": "Timetables, results, COE",
+      "channel": "Controller of Examinations (COE) office",
+      "facts": [
+        {
+          "text": "The Examination Cell handles end-term, mid-term, quiz, summer-term and improvement exams, uses a digital valuation system, and applies relative grading benchmarked against the class average.",
+          "sourceLabel": "Examinations",
+          "sourceUrl": "https://presidencyuniversity.in/academics/examinations"
+        },
+        {
+          "text": "Examination timetables are published as PDFs, grouped by school and exam (for example Make-Up Examinations, October 2026), on the university's Time Table page.",
+          "sourceLabel": "Time Table",
+          "sourceUrl": "https://presidencyuniversity.in/academics/time-table"
+        },
+        {
+          "text": "Students view and download semester-wise results through the university's online examination portal, reached from the Examinations page. Grade review is requested through the same portal and applies only to theory courses.",
+          "sourceLabel": "Examinations",
+          "sourceUrl": "https://presidencyuniversity.in/academics/examinations"
+        },
+        {
+          "text": "Companies that need student records verified use the document-verification form on the Examinations page, which carries a fee of Rs 1000 per verification.",
+          "sourceLabel": "Examinations",
+          "sourceUrl": "https://presidencyuniversity.in/academics/examinations"
+        }
+      ],
+      "suggestions": [
+        "Where can I find the examination timetable?",
+        "How do I check my results?"
+      ]
+    },
+    {
+      "id": "placements",
+      "name": "Placements",
+      "description": "Career services and training",
+      "channel": "Career Services (Placement & Training)",
+      "facts": [
+        {
+          "text": "Placements are handled by the Career Services Division. Students can contact the Career Services / Placement Department for training and placement information.",
+          "sourceLabel": "Placements",
+          "sourceUrl": "https://presidencyuniversity.in/placements"
+        },
+        {
+          "text": "The Career Services team is headed by the Director, Placement & Training, reachable at director_placements@presidencyuniversity.in.",
+          "sourceLabel": "Career Services Team",
+          "sourceUrl": "https://presidencyuniversity.in/placements/our-team"
+        },
+        {
+          "text": "Students go on industry internships lasting two months as part of Professional Practice.",
+          "sourceLabel": "Placements",
+          "sourceUrl": "https://presidencyuniversity.in/placements"
+        },
+        {
+          "text": "Placement statistics, notifications and industry partners are listed in the Placements section of the website. A highest-package figure was not captured here.",
+          "sourceLabel": "Placements",
+          "sourceUrl": "https://presidencyuniversity.in/placements"
+        }
+      ],
+      "suggestions": [
+        "Whom should I contact for placement training?",
+        "Do students get internships?"
+      ]
+    },
+    {
+      "id": "library",
+      "name": "Library",
+      "description": "Timings and borrowing",
+      "channel": "University library",
+      "facts": [
+        {
+          "text": "The library is open Monday to Saturday, 8:30 AM to 6:30 PM, and stays open until 8:00 PM during end-term exams. (as listed in the 2023 Student Handbook; confirm current timings with the library).",
+          "sourceLabel": "Student Handbook 2023",
+          "sourceUrl": "https://presidencyuniversity.in/assets/academics-pdfs/2023/07/STUDENT-HANDBOOK-2023-1.pdf"
+        },
+        {
+          "text": "Book issue and return (circulation) runs from 8:30 AM to 6:00 PM.",
+          "sourceLabel": "Student Handbook 2023",
+          "sourceUrl": "https://presidencyuniversity.in/assets/academics-pdfs/2023/07/STUDENT-HANDBOOK-2023-1.pdf"
+        },
+        {
+          "text": "The library is closed on Sundays and university holidays.",
+          "sourceLabel": "Student Handbook 2023",
+          "sourceUrl": "https://presidencyuniversity.in/assets/academics-pdfs/2023/07/STUDENT-HANDBOOK-2023-1.pdf"
+        },
+        {
+          "text": "Library access is limited to the university's students, faculty and staff, and students must bring their ID card for library transactions.",
+          "sourceLabel": "Student Handbook 2023",
+          "sourceUrl": "https://presidencyuniversity.in/assets/academics-pdfs/2023/07/STUDENT-HANDBOOK-2023-1.pdf"
+        },
+        {
+          "text": "The library is spread across three locations: the main library in the Management Block, the Library Annexe (management and commerce), and the second floor of E block (School of Law).",
+          "sourceLabel": "Library",
+          "sourceUrl": "https://presidencyuniversity.in/library"
+        },
+        {
+          "text": "The collection has over 40,500 books, 343 national and international journals, 45 magazines and 23 online databases, plus 35 newspapers.",
+          "sourceLabel": "Library",
+          "sourceUrl": "https://presidencyuniversity.in/library"
+        },
+        {
+          "text": "Library services include the KOHA catalogue (WEB OPAC, usable on and off campus), a self check-out kiosk and book drop box, remote access to e-resources, plagiarism checks (Turnitin), free reprography, 25 internet computers and the Libraries in Hand mobile app.",
+          "sourceLabel": "Library",
+          "sourceUrl": "https://presidencyuniversity.in/library"
+        }
+      ],
+      "suggestions": [
+        "What are the library timings?",
+        "How many books does the library have?"
+      ]
+    },
+    {
+      "id": "hostel",
+      "name": "Hostel",
+      "description": "Rooms, rules and complaints",
+      "channel": "Hostel Administration",
+      "facts": [
+        {
+          "text": "There are three hostels for boys and girls, with twin-shared and triple-shared rooms.",
+          "sourceLabel": "Hostel Facilities",
+          "sourceUrl": "https://presidencyuniversity.in/student-life/student-hostel-facilities"
+        },
+        {
+          "text": "Hostel accommodation is offered on a first-come, first-served basis; hostels and rooms are allotted randomly and cannot be changed once allotted.",
+          "sourceLabel": "Hostel Facilities",
+          "sourceUrl": "https://presidencyuniversity.in/student-life/student-hostel-facilities"
+        },
+        {
+          "text": "Hostellers must be inside the hostel premises before 7:00 PM.",
+          "sourceLabel": "Hostel Policy",
+          "sourceUrl": "https://presidencyuniversity.in/assets/academics-pdfs/2023/07/Policy-on-Hostel-Management-and-Rules-of-Operation-V1.pdf"
+        },
+        {
+          "text": "Hostel-related complaints should be submitted to the Hostel Administration.",
+          "sourceLabel": "Presidency University",
+          "sourceUrl": "https://presidencyuniversity.in/"
+        },
+        {
+          "text": "Rooms include a cot, study table and chair, cupboard and free Wi-Fi. Hostels also have a dining area with meals four times a day, laundry rooms, common rooms with TV, indoor and outdoor games, and hot and cold purified drinking water.",
+          "sourceLabel": "Hostel Facilities",
+          "sourceUrl": "https://presidencyuniversity.in/student-life/student-hostel-facilities"
+        },
+        {
+          "text": "Hostels have round-the-clock security with CCTV, resident wardens, a medical room with a nurse overnight and an ambulance for emergencies.",
+          "sourceLabel": "Hostel Facilities",
+          "sourceUrl": "https://presidencyuniversity.in/student-life/student-hostel-facilities"
+        }
+      ],
+      "suggestions": [
+        "How can I raise a hostel complaint?",
+        "What facilities do the hostels have?"
+      ]
+    },
+    {
+      "id": "administration",
+      "name": "Administration",
+      "description": "Admissions, certificates, contacts",
+      "channel": "Respective administrative office",
+      "facts": [
+        {
+          "text": "Students can contact the respective administrative office for certificates and student records.",
+          "sourceLabel": "Presidency University",
+          "sourceUrl": "https://presidencyuniversity.in/"
+        },
+        {
+          "text": "The campus is at Itgalpura, Rajanukunte, Yelahanka, Bengaluru 560119, Karnataka.",
+          "sourceLabel": "Contact",
+          "sourceUrl": "https://presidencyuniversity.in/contact"
+        },
+        {
+          "text": "Admissions: phone +91 9022092222 or +91 9024060000, email admission@presidencyuniversity.in. University board line: 080-23093500.",
+          "sourceLabel": "Contact",
+          "sourceUrl": "https://presidencyuniversity.in/contact"
+        },
+        {
+          "text": "The alumni office can be reached at alumni@presidencyuniversity.in.",
+          "sourceLabel": "Contact",
+          "sourceUrl": "https://presidencyuniversity.in/contact"
+        },
+        {
+          "text": "The admissions committee responds within 15 working days of receiving an application, and the application fee is non-refundable.",
+          "sourceLabel": "Admissions",
+          "sourceUrl": "https://presidencyuniversity.in/admissions"
+        },
+        {
+          "text": "The Registrar is Dr. Venkateswaran S.",
+          "sourceLabel": "Registrar",
+          "sourceUrl": "https://presidencyuniversity.in/about-us/leadership/registrar"
+        },
+        {
+          "text": "Alumni Relations Office: 080-42478700 (extensions 111 / 130), alumni@presidencyuniversity.in.",
+          "sourceLabel": "Contact Us",
+          "sourceUrl": "https://presidencyuniversity.in/contact-us"
+        },
+        {
+          "text": "Presidency University does not authorise any WhatsApp group or individual to collect fees or registrations on its behalf.",
+          "sourceLabel": "Presidency University",
+          "sourceUrl": "https://presidencyuniversity.in/"
+        }
+      ],
+      "suggestions": [
+        "What is the admissions phone number and email?",
+        "Who is the Registrar?"
+      ]
+    },
+    {
+      "id": "events",
+      "name": "Events",
+      "description": "Fests and announcements",
+      "channel": "Official communication channels",
+      "facts": [
+        {
+          "text": "Event announcements are on the Events page, notices on the Academics Notices page, and placement notifications in the Placements section.",
+          "sourceLabel": "Events",
+          "sourceUrl": "https://presidencyuniversity.in/events"
+        },
+        {
+          "text": "Upcoming events listed in November 2026 include a Regional Conference on Protecting the Rights of Senior Citizens (13 November), an International Conference on Leaving No One Behind (19 November) and Decoding Boardroom Dynamics 2.0, a national boardroom simulation and NCLT trial competition (21 November).",
+          "sourceLabel": "Presidency University",
+          "sourceUrl": "https://presidencyuniversity.in/"
+        },
+        {
+          "text": "Registration for the IX Convocation is open for graduands.",
+          "sourceLabel": "Presidency University",
+          "sourceUrl": "https://presidencyuniversity.in/"
+        },
+        {
+          "text": "Student fests and signature events such as Invincia 2026 and Udaan 2026 are listed under Student Affairs and Life at Presidency.",
+          "sourceLabel": "Events",
+          "sourceUrl": "https://presidencyuniversity.in/events"
+        }
+      ],
+      "suggestions": [
+        "What events are happening this month?",
+        "Where can I find university event announcements?"
+      ]
+    }
+  ]
+}
